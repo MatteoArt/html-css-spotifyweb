@@ -1,0 +1,38 @@
+/* regole css generali per qualsiasi risoluzione e regole per approccio
+desktop first schermo almeno fino a 1100px */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/* momentanea */
+main.main-container, footer.foot-play-nav {
+    min-height: 50px;
+    border: 1px dashed red;
+}
+main.main-container {
+    flex-grow: 1; /* va ad occupare tutto lo spazio disponibile */
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+nav.left-navbar {
+    width: 200px;
+    overflow: auto;
+    flex-shrink: 0; /* per evitare che venga schiacciata dal main-content */
+    border: 1px dashed green;
+}
+.main-content {
+    flex-grow: 1; /* va ad occupare tutto lo spazio disponibile */
+    overflow: auto;
+    border: 1px dashed green;
+}
+footer.foot-play-nav {
+    flex-shrink: 0;
+}
