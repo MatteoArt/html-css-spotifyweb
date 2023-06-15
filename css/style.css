@@ -36,3 +36,10 @@ nav.left-navbar {
 footer.foot-play-nav {
     flex-shrink: 0;
 }
+.main-content-nav {
+    min-height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border: 1px dashed purple;
+}
