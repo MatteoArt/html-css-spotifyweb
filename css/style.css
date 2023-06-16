@@ -13,7 +13,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 /* momentanea */
-main.main-container, footer.foot-play-nav {
+footer.foot-play-nav {
     min-height: 50px;
     border: 1px dashed red;
 }
@@ -24,15 +24,86 @@ main.main-container {
     flex-direction: row;
 }
 nav.left-navbar {
-    width: 200px;
+    min-width: 200px;
     overflow: auto;
     flex-shrink: 0; /* per evitare che venga schiacciata dal main-content */
-    border: 1px dashed green;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+.spotify-logo {
+    width: 120px;
+    margin: 15px 0 0 18px;
+}
+.icon {
+    width: 25px;
+    display: inline-block;
+}
+.icon-user {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: gray;
+    text-align: center;
+}
+.icon-user svg {
+    width: 21px;
+    height: 21px;
+}
+#download {
+    width: 22px;
+    display: inline-block;
+}
+.icon-caption {
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+.caption-big {
+    font-size: 14px;
+    margin-left: 8px;
+}
+.margin-row {
+    margin-top: 5px;
+}
+.caption-gray {
+    color: #717171;
+}
+.gray-svg svg {
+    color: #717171;
+    fill: currentColor;
+}
+.left-menu-navbar {
+    list-style-type: none;
+    margin-top: 20px;
+}
+.margin-caption {
+    margin-left: 8px;
+}
+.left-menu-navbar li, .left-nav-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 3px 3px 18px;
+}
+.left-menu-navbar li:first-child {
+    border-left: 3px solid #A7F62E;
+    padding-left: 15px;
 }
 .main-content {
     flex-grow: 1; /* va ad occupare tutto lo spazio disponibile */
     overflow: auto;
-    border: 1px dashed green;
+}
+.nav-item-big {
+    flex-basis: 300px;
+    border: 1px dashed white;
+}
+hr {
+    margin: 0 15px 0 18px;
+    border: 0;
+    border-top: 1px solid #717171;
 }
 footer.foot-play-nav {
     flex-shrink: 0;
