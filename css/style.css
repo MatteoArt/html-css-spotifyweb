@@ -31,6 +31,43 @@ nav.left-navbar {
     flex-direction: column;
     background-color: #000000;
 }
+.title {
+    color: white;
+    font-weight: 700;
+    margin-left: 5px;
+    font-size: 24px;
+}
+.album-title {
+    color: white;
+    text-align: center;
+    margin: 8px 0 6px 0;
+}
+.subtitle {
+    font-size: 12px;
+    color: #717171;
+    font-weight: bold;
+    text-align: center;
+}
+.subtitl {
+    font-size: 12px;
+    color: #717171;
+    font-weight: bold;
+    margin-left: 5px;
+}
+#johndoe-title, .bottom-title {
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 6px;
+}
+#row-top {
+    margin-top: 15px;
+}
+#middle-row {
+    margin-top: 15px;
+}
+.nav-item:last-child {
+    padding-bottom: 5px;
+}
 .spotify-logo {
     width: 120px;
     margin: 15px 0 0 18px;
@@ -60,6 +97,29 @@ nav.left-navbar {
     font-size: 13px;
     font-weight: bold;
     margin-left: 4px;
+}
+.plus-caption {
+    display: inline-block;
+    color: #717171;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.sub-overflow {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 15px 0 0 18px;
+}
+.sub-overflow ul {
+    list-style-type: none;
+}
+.sub-overflow li {
+    padding-bottom: 12px;
+}
+.sub-overflow li span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #717171;
 }
 .caption-big {
     font-size: 14px;
@@ -97,10 +157,32 @@ nav.left-navbar {
     overflow: auto;
 }
 .nav-item-big {
-    flex-basis: 300px;
-    border: 1px dashed white;
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
-hr {
+.sub-item {
+    padding-top: 12px;
+}
+.sub-item h5 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 750;
+    padding: 10px 3px 6px 18px;
+}
+.plus-button {
+    display: inline-block;
+    background-color: #717171;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    text-align: center;
+}
+.plus-button i {
+    padding-top: 2px;
+}
+hr.bar {
     margin: 0 15px 0 18px;
     border: 0;
     border-top: 1px solid #717171;
@@ -141,6 +223,7 @@ footer.foot-play-nav {
 }
 .content {
     padding: 15px;
+    background-color: #141922;
 }
 .music-cards {
     display: flex;
@@ -149,14 +232,54 @@ footer.foot-play-nav {
 .music-cards .music-box {
     flex-basis: calc((100% / 6) - (5px * 2));
     min-height: 150px;
-    border: 1px dashed black; /* momentanea */
     margin: 0 5px;
+}
+.album-cover img {
+    width: 100%;
+}
+.album-cover-rounded {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+.album-cover-rounded img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .margin-box {
     margin: 30px 0 20px;
 }
 .margin-box-bottom {
     margin: 20px 0;
+}
+nav.secondary-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-bottom: 20px;
+}
+.secondary-navbar-item {
+    color: #717171;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+}
+.secondary-navbar-item:first-child {
+    position: relative;
+}
+.secondary-navbar-item hr {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33px;
+    border-color: #A7F62E;
 }
 /* media queries */
 /* schermi desktop fino a 1100px */
@@ -174,4 +297,4 @@ footer.foot-play-nav {
     .music-cards .box-tablet {
         flex-basis: calc((100% / 2) - (5px * 2));
     }
-}
+} /* mettere z-index a navbar principale */
