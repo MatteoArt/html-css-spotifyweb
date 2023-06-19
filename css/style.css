@@ -361,6 +361,55 @@ nav.secondary-navbar {
 .secondary-navbar-item:first-child {
     position: relative;
 }
+div.secondary-navbar-item span:hover {
+    cursor: pointer;
+    color: white;
+}
+.left-menu-navbar li:hover {
+    background-color: rgba(230, 230, 230, 0.3);
+}
+.left-menu-navbar li:hover .icon-caption {
+    cursor: pointer;
+    color: white;
+}
+.left-menu-navbar li:hover .icon svg {
+    cursor: pointer;
+    color: white;
+    fill: currentColor;
+}
+div.left-nav-row:hover {
+    background-color: rgba(230, 230, 230, 0.3);
+}
+div.left-nav-row:hover .plus-button {
+    cursor: pointer;
+    background-color: white;
+}
+div.left-nav-row:hover .plus-caption {
+    cursor: pointer;
+    color: white;
+}
+div.left-nav-row:hover #download svg {
+    cursor: pointer;
+    color: white;
+    fill: currentColor;
+}
+div.left-nav-row:hover .icon-caption {
+    cursor: pointer;
+    color: white;
+}
+div.left-nav-row:hover .icon-user {
+    cursor: pointer;
+    border: 1px solid white;
+}
+div.sub-overflow ul li span:hover {
+    cursor: pointer;
+    color: white;
+}
+#subdescription:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
 .secondary-navbar-item hr {
     position: absolute;
     bottom: -4px;
