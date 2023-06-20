@@ -322,6 +322,16 @@ span.big-icon {
     min-height: 150px;
     margin: 0 5px;
 }
+.album-cover {
+    position: relative;
+}
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 .album-cover img {
     width: 100%;
 }
