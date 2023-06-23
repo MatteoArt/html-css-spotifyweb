@@ -227,6 +227,25 @@ footer.foot-play-nav {
     background-color: #5A5A5A;
     border-radius: 4px;
 }
+.indicator {
+    display: none;
+}
+.time-slider:hover {
+    cursor: pointer;
+}
+.time-slider:hover span.indicator {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: -6.5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+}
+.time-slider:hover .timing-player {
+    background-color: #A7F62E;
+}
 div.icons {
     display: flex;
     flex-direction: row;
@@ -262,16 +281,22 @@ span.big-icon {
     width: 30%;
     background-color: #C1C1C1;
     border-radius: 4px;
+    position: relative;
 }
 .timing-player {
     height: 5px;
     background-color: #C1C1C1;
     border-radius: 4px;
     width: 20%;
+    position: relative;
 }
 .fav-icon-container i {
     padding: 4px;
     color: #717171;
+}
+.fav-icon-container i:hover {
+    cursor: pointer;
+    color: white;
 }
 .img-play-song {
     width: 60px;
@@ -331,6 +356,18 @@ span.big-icon {
     left: 0;
     bottom: 0;
     right: 0;
+    display: none;
+}
+.album-cover:hover .card-img-overlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.card-img-overlay i {
+    font-size: 2.5rem;
 }
 .album-cover img {
     width: 100%;
@@ -339,6 +376,17 @@ span.big-icon {
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
+    position: relative;
+}
+.album-cover-rounded:hover .card-img-overlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.album-cover-rounded:hover img {
+    opacity: 0.6;
 }
 .album-cover-rounded img {
     width: 100%;
@@ -508,4 +556,4 @@ div.sub-overflow ul li span:hover {
     .description {
         margin: 0;
     }
-}
+} /* aggiungi effetto hover ad ultima barra a destra in basso */
