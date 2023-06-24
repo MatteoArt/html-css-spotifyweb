@@ -577,8 +577,28 @@ div.sub-overflow ul li span:hover {
         width: calc(18px + 28px + 18px);
         min-width: 64px;
     }
+    .slider {
+        width: 50px;
+    }
+    div.icons {
+        gap: 7px;
+    }
+    span.big-icon {
+        margin: 0;
+    }
     .item-play-nav {
         min-width: 120px;
+    }
+    .foot-play-nav {
+        font-size: 0.7rem;
+    }
+    .time {
+        font-weight: normal;
+        font-size: 12px;
+    }
+    .time-container {
+        gap: 0;
+        width: 70%;
     }
     .item-play-nav:last-child {
         gap: 0;
@@ -587,3 +607,9 @@ div.sub-overflow ul li span:hover {
         margin: 0;
     }
 }
+@media screen and (max-width: 480px) {
+    .item-play-nav {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+} /* ottimizza pointer a bassa risoluzione */
