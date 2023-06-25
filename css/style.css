@@ -639,3 +639,10 @@ div.sub-overflow ul li span:hover {
         padding-right: 5px;
     }
 }
+@media screen and (max-height: 350px) {
+    footer.foot-play-nav {
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+    }
+}
