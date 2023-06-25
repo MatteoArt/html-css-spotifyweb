@@ -237,9 +237,9 @@ footer.foot-play-nav {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: -6.5px;
-    width: 18px;
-    height: 18px;
+    top: -4.7px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: white;
 }
@@ -290,9 +290,9 @@ span.big-icon {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: -6.5px;
-    width: 18px;
-    height: 18px;
+    top: -4.7px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: white;
 }
@@ -539,7 +539,7 @@ div.sub-overflow ul li span:hover {
         min-width: 190px;
     }
     .item-play-nav:last-child {
-        gap: 5px;
+        gap: 3px;
     }
     .description {
         margin-left: 5px;
@@ -552,8 +552,24 @@ div.sub-overflow ul li span:hover {
         width: calc(100% / 3);
     }
     .time-container {
-        width: 100%;
+        width: 80%;
         gap: 10px;
+    }
+    div.icons {
+        gap: 15px;
+    }
+    .slider {
+        width: 55px;
+    }
+    .time-slider:hover span.indicator {
+        width: 12px;
+        height: 12px;
+        top: -3.75px;
+    }
+    .slider:hover span.indicator {
+        width: 12px;
+        height: 12px;
+        top: -3.75px;
     }
 }
 /* schermi smartphone fino a 600px */ 
@@ -606,10 +622,20 @@ div.sub-overflow ul li span:hover {
     .description {
         margin: 0;
     }
+    .time-slider:hover span.indicator {
+        width: 9px;
+        height: 9px;
+        top: -2.2px;
+    }
+    .slider:hover span.indicator {
+        width: 9px;
+        height: 9px;
+        top: -2.2px;
+    }
 }
 @media screen and (max-width: 480px) {
     .item-play-nav {
         padding-left: 5px;
         padding-right: 5px;
     }
-} /* ottimizza pointer a bassa risoluzione */
+}
